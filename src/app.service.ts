@@ -1,8 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 
-@Injectable()
+@Injectable() // For the use of this dependency
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
+    // Here we apply the all logic (that can also be modularize)
+    getHello() : string {
+        return 'Hello World!';
+    }
 }
