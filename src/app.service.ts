@@ -4,6 +4,10 @@ import { Injectable } from "@nestjs/common";
 export class AppService {
     // Here we apply the all logic (that can also be modularize)
     getHello() : string {
-        return 'Hello World!';
+        return 'Hello World!'; // You return just the body of the request
+    }
+
+    getObject() : {name : string} {
+        return {name: "Tulio"}
     }
 }
